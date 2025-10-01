@@ -1,8 +1,5 @@
-# TODO: Suppose the user types:
-#        3
-#        y
-#        0
-#       ...what will the following program print?
+# TODO: Suppose the user types "3", then "y", then "0". What will the
+#       following program print?
 
 done = False
 
