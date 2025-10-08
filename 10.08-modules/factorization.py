@@ -1,6 +1,16 @@
 # TODO: Suppose the user types "15". What will the following program print?
 
 def divides(a, b):
+    """
+    NOTE: Once we understand the behavior of a function, we should document
+          its purpose so that we don't have to trace through it again in the
+          future -- this is a special comment called a "docstring".
+
+    Determine whether or not a divides b.
+    :param a: An integer divisor
+    :param b: An integer dividend
+    :return: Whether or not b is divisible by a
+    """
     return b % a == 0
 
 
