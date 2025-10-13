@@ -2,7 +2,13 @@ import math
 
 
 def time_of_flight(height):
-    return 0
+    """
+    Compute a cannonball's ideal time of flight.
+
+    :param height: A floating point initial height
+    :return: A floating point time of flight
+    """
+    return math.sqrt(2 * height / 9.81)
 
 
 def range_of_shot(velocity, time):
@@ -25,7 +31,12 @@ def is_hit(shot, distance, width):
     :param width: A floating point target width
     :return: Whether or not the cannonball hits
     """
-    return distance <= shot
+    # NOTE: Our first attempt at finding bugs is to add print statements
+    #       throughout our program -- we want to know exactly what our program
+    #       was doing at each step along the way, rather than trying to infer
+    #       from what we can see at the end.
+    # print(shot, distance, width)
+    return distance <= shot and shot <= distance + width
 
 
 def main():
